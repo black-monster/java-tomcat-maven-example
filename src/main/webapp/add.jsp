@@ -5,16 +5,13 @@
     
     <body>
  
-<% try { %> 
-<%= "<h1> The sum is "+(Integer.parseInt(request.getParameter("t1"))+Integer.parseInt(request.getParameter("t2")))+"</h1>"%>
-<% } %>
-<%catch (Exception e) { %>>
-<a>Invalid output</a>
-<% } %>
-<%finally { %>
-<a>Yay!</a>
-<% } %>
-   
-    
+<% try{ 
+ "<h1> The sum is "+(Integer.parseInt(request.getParameter("t1"))+Integer.parseInt(request.getParameter("t2")))+"</h1>"
+ } 
+catch (Exception e){ 
+"<a>Invalid output</a>"
+ } 
+ %>
+ 
     </body>
 </html>
